@@ -9,9 +9,11 @@ while b < 10:
 words = ['cat', 'mouse', 'dog']
 for w in words:
     print w, len(w)
+
 for w in words[:]:
     if len(w) > 2:
         words.insert(0, w)
+        
 print words
 
 
