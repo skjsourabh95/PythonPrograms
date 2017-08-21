@@ -1,4 +1,9 @@
-spy_name = "Sourabh"
-spy_age = 22
-spy_rating = 4.9
-spy_status = False
+
+spy = {
+  'name': 'Sourabh',
+  'salutation': 'Mr.',
+  'age': 24,
+  'rating': 4.7,
+  'status': True
+}
+

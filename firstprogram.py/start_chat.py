@@ -1,8 +1,11 @@
+from read_msg import  read_message
+from send_msg import send_message
+
 import add_friend
 # def of chat function
 
 
-def start_chat(spy_name, spy_age, spy_rating):
+def start_chat():
     show_menu = True
     while show_menu:
         menu()
@@ -17,8 +20,10 @@ def start_chat(spy_name, spy_age, spy_rating):
             no = add_friend.add_friend()
             print "You have " + str(no) + " friends now"
         elif choice == "3":
-            print "3"
+            send_message()
         elif choice == "4":
+            read_message()
+        elif choice == "5":
             show_menu = False
         else:
             print "Enter correct value"
@@ -57,6 +62,7 @@ def menu():
     print "Menu"
     print "1.Add Status."
     print "2.Add Friend"
-    print "3.Exit"
-    print "4."
+    print "3.Send a Secret msg"
+    print "4.Read a Secret msg"
+    print "5.Exit"
 
