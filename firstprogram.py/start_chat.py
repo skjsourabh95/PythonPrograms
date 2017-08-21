@@ -57,6 +57,6 @@ def menu():
     print "Menu"
     print "1.Add Status."
     print "2.Add Friend"
-    print "3."
+    print "3.Exit"
     print "4."
 
